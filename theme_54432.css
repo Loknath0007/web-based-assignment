@@ -1,0 +1,393 @@
+/*----------------------------------------------------------------------
+ * TMT 2654 - Web Based System Development
+ * Loknath Chandra Das - 54432
+ * Assignment - 20%
+ * Due Date - 21th March 2019
+ *  ------------------------------------------------------------------
+ *
+ *  							Table of Content 
+ *  # webfonts and iconfonts
+ *  # web animation
+ *  # base style overrides
+ *      ## links
+ *  # typography & general theme styles
+ *      ## responsive grid container
+ *      ## lists
+ *  # header styles
+ *      ## header image
+ *  # about
+ *      ## location
+ *      ## profiles
+ *  # work
+ *  # award
+ *  # language
+ *  # skill
+ *  # interest
+ *  # reference
+ *  # footer
+ *  # responsive device orientation
+ * =================================================================== */
+
+
+
+ /* ===================================================================
+ *                     # webfonts and iconfonts
+ *
+ * ------------------------------------------------------------------- */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+}
+
+
+
+
+/* ===================================================================
+ *                     # base style overrides
+ *
+ * ------------------------------------------------------------------- */
+
+*{
+	margin:0;
+	padding:0;
+	font-family: Lucida Console, Helvetica, sans-serif;
+}
+
+
+
+body {
+  background: url(img/background.jpeg) no-repeat ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+header img {
+	display: block;
+	margin: 65px;
+	margin-top:20px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+	height: 45%;
+	width: 15%;
+	border:2px solid #00BFFF;
+  
+}
+
+header h1, h2{
+	background-color:rgba(50,50,50,0.5);
+	color:#FFFFFF;
+	font-weight:bold;
+	text-align: center;
+	font-family:sans-serif;
+	width: 100%;
+	margin-top:5px;
+}
+
+
+/* ===================================================================
+ *                # typography & general theme styles 
+ * 
+ * ------------------------------------------------------------------- */
+
+section {
+	margin: 40px auto 40px;
+	padding: 10px;
+	width: 60%;
+	background-color: #fff;
+	border: 1px solid #aaa;
+	box-shadow: 5px 5px 5px #000;
+	text-align: center;
+}
+
+section{
+    padding: 20px;
+    transition: box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+section:hover{
+    box-shadow: 5px 5px 5px black;
+    transform: scale(1.10);
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## logo
+ * ------------------------------------------------------------------- */
+
+.logo
+{
+	border-radius: 50%;
+}
+
+/* ------------------------------------------------------------------- 
+ *                          ## about
+ * ------------------------------------------------------------------- */
+
+.about
+{
+	background-repeat: none;
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------------------------------------- 
+ *                          ## summary
+ * ------------------------------------------------------------------- */
+
+.summary
+{
+	color:#fff;
+}
+
+/* ------------------------------------------------------------------- 
+ *                          ## contact
+ * ------------------------------------------------------------------- */
+
+.contact
+{
+display: inline-block;
+    width: 60%;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border-style: solid;
+    line-height: 20px;
+    background-color:#fff;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## work
+ * ------------------------------------------------------------------- */
+
+.work
+{
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.works
+{
+
+	margin-top: 20px;
+	background-color: #00BFFF;
+	border-style: solid;
+	border-color: black;
+	font-family: Geneva;
+}
+
+/* ------------------------------------------------------------------- 
+ *                          ## lists 
+ * ------------------------------------------------------------------- */
+
+.works ul
+{
+	list-style-type: none;
+	align-items: center;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## location
+ * ------------------------------------------------------------------- */
+
+.location {
+	margin-top: 20px;
+	background-color: #00BFFF;
+	border-style: solid;
+	border-color: black;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## awards
+ * ------------------------------------------------------------------- */
+
+.awards
+{
+margin-top: 20px;
+	background-color: #191970;
+	border-style: solid;
+	border-color: black;
+	color:yellow;
+
+}
+.award
+{
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.award img
+{
+	height:200px;
+	width: 550px;
+}
+
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## interests
+ * ------------------------------------------------------------------- */
+
+.interest
+{
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.interests
+{
+	margin-top: 20px;
+	background-color: #fff;
+	border-style: solid;
+	border-color: black;
+}
+
+.interests ul
+{
+	list-style-type: none;
+	align-items: center;
+	margin-left:-50px;
+}
+
+/* ------------------------------------------------------------------- 
+ *                          ## profiles
+ * ------------------------------------------------------------------- */
+
+.profiles {
+
+	margin-top: 20px;
+	background-color: #191970;
+	border-style: solid;
+	border-color: black;
+	color:yellow;
+	
+}
+
+.profiles a
+{
+	color:white;
+	padding-left:5px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                          ## skills
+ * ------------------------------------------------------------------- */
+
+
+
+.skills
+{
+	margin-top: 20px;
+	background-color: #fff;
+	border-style: solid;
+	border-color: black;
+
+
+}
+
+.skill
+{
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+
+.skills ul
+{
+	list-style-type: none;
+	align-items: center;
+	margin-left:-50px;
+}
+
+
+/* ------------------------------------------------------------------- 
+ *                   # references
+ * ------------------------------------------------------------------- */
+
+
+.reference
+{
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.references
+{
+	margin-top: 20px;
+	background-color: #00BFFF;
+	color:black;
+	border-style: solid;
+	border-color: black;
+}
+
+
+
+
+/* ------------------------------------------------------------------- 
+ *                   # Language
+ * ------------------------------------------------------------------- */
+
+
+.language
+{
+	background : url(img/about.jpg) repeat;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+
+.languages {
+	margin-top: 20px;
+	background-color: #3d76d1;
+	border-style: solid;
+	border-color: black;
+	font-family: Geneva;
+}
+/* ------------------------------------------------------------------- 
+ *                          ## lists 
+ * ------------------------------------------------------------------- */
+ul {
+	margin-top: 5px;
+	margin-left: 50px;
+}
+li {
+	padding-left: 10px;
+}
+h2, h3 {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 25px;
+}
+p {
+	margin-top: 10px;
+	text-align: center;
+	text-decoration-color: white;
+	font-family: Courier;
+	word-spacing: 3.5px;
+	border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* ------------------------------------------------------------------- 
+ *                   # footer
+ * ------------------------------------------------------------------- */
+
+#footer{
+	background-color: #191970;
+	color:yellow;
+	overflow: hidden;
+	margin-top: 20px;
+    text-align: center;
+    margin-left: 19%;
+    margin-right: 19%;
+    padding: 5px;
+
+
+}
